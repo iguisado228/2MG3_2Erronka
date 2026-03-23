@@ -32,22 +32,18 @@ CREATE TABLE `erreserbak` (
   `faktura_ruta` varchar(45) DEFAULT NULL,
   `langileak_id` int NOT NULL,
   `mahaiak_id` int NOT NULL,
+  `ordainduta` int DEFAULT NULL,
   PRIMARY KEY (`id`,`langileak_id`,`mahaiak_id`),
   KEY `fk_erreserbak_langileak1_idx` (`langileak_id`),
   KEY `fk_erreserbak_mahaiak1_idx` (`mahaiak_id`),
+  KEY `langileak_id` (`langileak_id`),
+  KEY `mahaiak_id` (`mahaiak_id`),
+  CONSTRAINT `FK_411AD20C` FOREIGN KEY (`langileak_id`) REFERENCES `langileak` (`id`),
+  CONSTRAINT `FK_9CEB933F` FOREIGN KEY (`mahaiak_id`) REFERENCES `mahaiak` (`id`),
   CONSTRAINT `fk_erreserbak_langileak1` FOREIGN KEY (`langileak_id`) REFERENCES `langileak` (`id`),
   CONSTRAINT `fk_erreserbak_mahaiak1` FOREIGN KEY (`mahaiak_id`) REFERENCES `mahaiak` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `erreserbak`
---
-
-LOCK TABLES `erreserbak` WRITE;
-/*!40000 ALTER TABLE `erreserbak` DISABLE KEYS */;
-/*!40000 ALTER TABLE `erreserbak` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `eskariak`
@@ -65,18 +61,15 @@ CREATE TABLE `eskariak` (
   `erreserbak_mahaiak_id` int NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_eskariak_erreserbak1_idx` (`erreserbak_id`,`erreserbak_langileak_id`,`erreserbak_mahaiak_id`),
+  KEY `erreserbak_id` (`erreserbak_id`),
+  KEY `erreserbak_langileak_id` (`erreserbak_langileak_id`),
+  KEY `erreserbak_mahaiak_id` (`erreserbak_mahaiak_id`),
+  CONSTRAINT `FK_82A96F40` FOREIGN KEY (`erreserbak_id`) REFERENCES `erreserbak` (`id`),
+  CONSTRAINT `FK_8E810A89` FOREIGN KEY (`erreserbak_mahaiak_id`) REFERENCES `mahaiak` (`id`),
+  CONSTRAINT `FK_A612A34C` FOREIGN KEY (`erreserbak_langileak_id`) REFERENCES `langileak` (`id`),
   CONSTRAINT `fk_eskariak_erreserbak1` FOREIGN KEY (`erreserbak_id`, `erreserbak_langileak_id`, `erreserbak_mahaiak_id`) REFERENCES `erreserbak` (`id`, `langileak_id`, `mahaiak_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `eskariak`
---
-
-LOCK TABLES `eskariak` WRITE;
-/*!40000 ALTER TABLE `eskariak` DISABLE KEYS */;
-/*!40000 ALTER TABLE `eskariak` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `eskariak_has_produktuak`
@@ -93,19 +86,14 @@ CREATE TABLE `eskariak_has_produktuak` (
   PRIMARY KEY (`eskariak_id`,`produktuak_id`),
   KEY `fk_eskariak_has_produktuak_produktuak1_idx` (`produktuak_id`),
   KEY `fk_eskariak_has_produktuak_eskariak1_idx` (`eskariak_id`),
+  KEY `eskariak_id` (`eskariak_id`),
+  KEY `produktuak_id` (`produktuak_id`),
+  CONSTRAINT `FK_496A0619` FOREIGN KEY (`produktuak_id`) REFERENCES `produktuak` (`id`),
+  CONSTRAINT `FK_E9A6D6AA` FOREIGN KEY (`eskariak_id`) REFERENCES `eskariak` (`id`),
   CONSTRAINT `fk_eskariak_has_produktuak_eskariak1` FOREIGN KEY (`eskariak_id`) REFERENCES `eskariak` (`id`),
   CONSTRAINT `fk_eskariak_has_produktuak_produktuak1` FOREIGN KEY (`produktuak_id`) REFERENCES `produktuak` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `eskariak_has_produktuak`
---
-
-LOCK TABLES `eskariak_has_produktuak` WRITE;
-/*!40000 ALTER TABLE `eskariak_has_produktuak` DISABLE KEYS */;
-/*!40000 ALTER TABLE `eskariak_has_produktuak` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `hornitzaileak`
@@ -120,17 +108,8 @@ CREATE TABLE `hornitzaileak` (
   `kontaktua` varchar(50) NOT NULL,
   `helbidea` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `hornitzaileak`
---
-
-LOCK TABLES `hornitzaileak` WRITE;
-/*!40000 ALTER TABLE `hornitzaileak` DISABLE KEYS */;
-/*!40000 ALTER TABLE `hornitzaileak` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `langileak`
@@ -151,19 +130,11 @@ CREATE TABLE `langileak` (
   `lanpostuak_id` int NOT NULL,
   PRIMARY KEY (`id`),
   KEY `fk_langileak_lanpostuak1_idx` (`lanpostuak_id`),
+  KEY `lanpostuak_id` (`lanpostuak_id`),
+  CONSTRAINT `FK_134CB256` FOREIGN KEY (`lanpostuak_id`) REFERENCES `lanpostuak` (`id`),
   CONSTRAINT `fk_langileak_lanpostuak1` FOREIGN KEY (`lanpostuak_id`) REFERENCES `lanpostuak` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `langileak`
---
-
-LOCK TABLES `langileak` WRITE;
-/*!40000 ALTER TABLE `langileak` DISABLE KEYS */;
-INSERT INTO `langileak` VALUES (1,'Ane','Goikoetxea','12345678A','ane.g',101,'03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','Kale Nagusia 1, Bilbo',1),(2,'Mikel','Urrutia','87654321B','mikel.u',102,'03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','Plaza Berria 5, Donostia',2),(3,'Leire','Etxebarria','11223344C','leire.e',103,'03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4','Libertate Kalea 10, Gasteiz',3);
-/*!40000 ALTER TABLE `langileak` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `lanpostuak`
@@ -176,18 +147,8 @@ CREATE TABLE `lanpostuak` (
   `id` int NOT NULL AUTO_INCREMENT,
   `lanpostua` varchar(45) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `lanpostuak`
---
-
-LOCK TABLES `lanpostuak` WRITE;
-/*!40000 ALTER TABLE `lanpostuak` DISABLE KEYS */;
-INSERT INTO `lanpostuak` VALUES (1,'Gerentea'),(2,'Zerbitzaria'),(3,'Sukaldaria');
-/*!40000 ALTER TABLE `lanpostuak` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `mahaiak`
@@ -202,17 +163,22 @@ CREATE TABLE `mahaiak` (
   `pertsona_kopuru` int NOT NULL,
   `kokapena` varchar(25) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `mahaiak`
+-- Table structure for table `mota`
 --
 
-LOCK TABLES `mahaiak` WRITE;
-/*!40000 ALTER TABLE `mahaiak` DISABLE KEYS */;
-/*!40000 ALTER TABLE `mahaiak` ENABLE KEYS */;
-UNLOCK TABLES;
+DROP TABLE IF EXISTS `mota`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `mota` (
+  `id` int NOT NULL,
+  `izena` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+/*!40101 SET character_set_client = @saved_cs_client */;
 
 --
 -- Table structure for table `osagaiak`
@@ -230,17 +196,8 @@ CREATE TABLE `osagaiak` (
   PRIMARY KEY (`id`),
   KEY `fk_osagaiak_hornitzaileak1_idx` (`hornitzaileak_id`),
   CONSTRAINT `fk_osagaiak_hornitzaileak1` FOREIGN KEY (`hornitzaileak_id`) REFERENCES `hornitzaileak` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `osagaiak`
---
-
-LOCK TABLES `osagaiak` WRITE;
-/*!40000 ALTER TABLE `osagaiak` DISABLE KEYS */;
-/*!40000 ALTER TABLE `osagaiak` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `produktuak`
@@ -253,20 +210,13 @@ CREATE TABLE `produktuak` (
   `id` int NOT NULL AUTO_INCREMENT,
   `izena` varchar(60) NOT NULL,
   `prezioa` double NOT NULL,
-  `mota` varchar(20) NOT NULL,
   `stock` int NOT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+  `mota_id` int NOT NULL,
+  PRIMARY KEY (`id`,`mota_id`),
+  KEY `fk_produktuak_mota1_idx` (`mota_id`),
+  CONSTRAINT `fk_produktuak_mota1` FOREIGN KEY (`mota_id`) REFERENCES `mota` (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `produktuak`
---
-
-LOCK TABLES `produktuak` WRITE;
-/*!40000 ALTER TABLE `produktuak` DISABLE KEYS */;
-/*!40000 ALTER TABLE `produktuak` ENABLE KEYS */;
-UNLOCK TABLES;
 
 --
 -- Table structure for table `produktuak_has_osagaiak`
@@ -278,49 +228,18 @@ DROP TABLE IF EXISTS `produktuak_has_osagaiak`;
 CREATE TABLE `produktuak_has_osagaiak` (
   `produktuak_id` int NOT NULL,
   `osagaiak_id` int NOT NULL,
+  `kantitatea` int NOT NULL,
   PRIMARY KEY (`produktuak_id`,`osagaiak_id`),
   KEY `fk_produktuak_has_osagaiak_osagaiak1_idx` (`osagaiak_id`),
   KEY `fk_produktuak_has_osagaiak_produktuak1_idx` (`produktuak_id`),
+  KEY `produktuak_id` (`produktuak_id`),
+  KEY `osagaiak_id` (`osagaiak_id`),
+  CONSTRAINT `FK_200FAAF` FOREIGN KEY (`osagaiak_id`) REFERENCES `osagaiak` (`id`),
+  CONSTRAINT `FK_980955FB` FOREIGN KEY (`produktuak_id`) REFERENCES `produktuak` (`id`),
   CONSTRAINT `fk_produktuak_has_osagaiak_osagaiak1` FOREIGN KEY (`osagaiak_id`) REFERENCES `osagaiak` (`id`),
   CONSTRAINT `fk_produktuak_has_osagaiak_produktuak1` FOREIGN KEY (`produktuak_id`) REFERENCES `produktuak` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `produktuak_has_osagaiak`
---
-
-LOCK TABLES `produktuak_has_osagaiak` WRITE;
-/*!40000 ALTER TABLE `produktuak_has_osagaiak` DISABLE KEYS */;
-/*!40000 ALTER TABLE `produktuak_has_osagaiak` ENABLE KEYS */;
-UNLOCK TABLES;
-
---
--- Table structure for table `produktuak_has_osagaiak1`
---
-
-DROP TABLE IF EXISTS `produktuak_has_osagaiak1`;
-/*!40101 SET @saved_cs_client     = @@character_set_client */;
-/*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `produktuak_has_osagaiak1` (
-  `produktuak_id` int NOT NULL,
-  `osagaiak_id` int NOT NULL,
-  PRIMARY KEY (`produktuak_id`,`osagaiak_id`),
-  KEY `fk_produktuak_has_osagaiak1_osagaiak1_idx` (`osagaiak_id`),
-  KEY `fk_produktuak_has_osagaiak1_produktuak1_idx` (`produktuak_id`),
-  CONSTRAINT `fk_produktuak_has_osagaiak1_osagaiak1` FOREIGN KEY (`osagaiak_id`) REFERENCES `osagaiak` (`id`),
-  CONSTRAINT `fk_produktuak_has_osagaiak1_produktuak1` FOREIGN KEY (`produktuak_id`) REFERENCES `produktuak` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
-/*!40101 SET character_set_client = @saved_cs_client */;
-
---
--- Dumping data for table `produktuak_has_osagaiak1`
---
-
-LOCK TABLES `produktuak_has_osagaiak1` WRITE;
-/*!40000 ALTER TABLE `produktuak_has_osagaiak1` DISABLE KEYS */;
-/*!40000 ALTER TABLE `produktuak_has_osagaiak1` ENABLE KEYS */;
-UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -331,4 +250,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2026-03-10 13:17:33
+-- Dump completed on 2026-03-23 16:22:53
