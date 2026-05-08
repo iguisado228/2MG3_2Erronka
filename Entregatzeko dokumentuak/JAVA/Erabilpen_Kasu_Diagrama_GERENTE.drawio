@@ -1,0 +1,257 @@
+<mxfile host="Electron" agent="Codex">
+  <diagram id="java-erabilera-kasuak" name="Java erabilera-kasuak">
+    <mxGraphModel dx="6345" dy="4600" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1900" pageHeight="1300" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="actorGerentea" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" value="Gerentea" vertex="1">
+          <mxGeometry height="120" width="80" x="70" y="360" as="geometry" />
+        </mxCell>
+        <mxCell id="ucLogin" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Saioa hasi" vertex="1">
+          <mxGeometry height="60" width="150" x="150" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ucLogout" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Saioa itxi" vertex="1">
+          <mxGeometry height="60" width="150" x="310" y="70" as="geometry" />
+        </mxCell>
+        <mxCell id="ucMenu" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="Menu nagusia erabili" vertex="1">
+          <mxGeometry height="70" width="180" x="290" y="385" as="geometry" />
+        </mxCell>
+        <mxCell id="ucLangileak" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Langileak kudeatu" vertex="1">
+          <mxGeometry height="60" width="180" x="750" y="-400" as="geometry" />
+        </mxCell>
+        <mxCell id="ucLangileaSortu" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Langilea sortu" vertex="1">
+          <mxGeometry height="60" width="160" x="1215" y="-360" as="geometry" />
+        </mxCell>
+        <mxCell id="ucLangileaEditatu" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Langilea editatu" vertex="1">
+          <mxGeometry height="60" width="160" x="1215" y="-450" as="geometry" />
+        </mxCell>
+        <mxCell id="ucLangileaEzabatu" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Langilea ezabatu" vertex="1">
+          <mxGeometry height="60" width="160" x="1215" y="-270" as="geometry" />
+        </mxCell>
+        <mxCell id="ucProduktuak" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Produktuak kudeatu" vertex="1">
+          <mxGeometry height="60" width="180" x="750" y="-90" as="geometry" />
+        </mxCell>
+        <mxCell id="ucProduktuaSortu" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Produktua sortu" vertex="1">
+          <mxGeometry height="60" width="160" x="1215" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="ucProduktuaEditatu" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Produktua editatu" vertex="1">
+          <mxGeometry height="60" width="160" x="1215" y="-100" as="geometry" />
+        </mxCell>
+        <mxCell id="ucProduktuaEzabatu" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Produktua ezabatu" vertex="1">
+          <mxGeometry height="60" width="160" x="1215" y="-180" as="geometry" />
+        </mxCell>
+        <mxCell id="ucOsagaiak" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" value="Osagaiak kudeatu" vertex="1">
+          <mxGeometry height="60" width="180" x="750" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="ucStocka" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Stocka eguneratu" vertex="1">
+          <mxGeometry height="60" width="160" x="1210" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="ucStockGutxi" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Osagaien stock egoera ikusi" vertex="1">
+          <mxGeometry height="60" width="210" x="1185" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="ucHornitzaileak" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="Hornitzaileak kudeatu" vertex="1">
+          <mxGeometry height="60" width="190" x="745" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="ucHornitzaileaSortu" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Hornitzailea sortu" vertex="1">
+          <mxGeometry height="60" width="180" x="1210" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="ucHornitzaileaEditatu" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Hornitzailea editatu" vertex="1">
+          <mxGeometry height="60" width="180" x="1215" y="630" as="geometry" />
+        </mxCell>
+        <mxCell id="ucHornitzaileaEzabatu" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Hornitzailea ezabatu" vertex="1">
+          <mxGeometry height="60" width="180" x="1220" y="720" as="geometry" />
+        </mxCell>
+        <mxCell id="ucMahaiak" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Mahaiak kudeatu" vertex="1">
+          <mxGeometry height="60" width="180" x="755" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="ucMahaiaSortu" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Mahaia sortu" vertex="1">
+          <mxGeometry height="60" width="160" x="1240" y="980" as="geometry" />
+        </mxCell>
+        <mxCell id="ucMahaiaEditatu" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Mahaia editatu" vertex="1">
+          <mxGeometry height="60" width="160" x="1240" y="900" as="geometry" />
+        </mxCell>
+        <mxCell id="ucMahaiaEzabatu" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Mahaia ezabatu" vertex="1">
+          <mxGeometry height="60" width="160" x="1240" y="810" as="geometry" />
+        </mxCell>
+        <mxCell id="ucEguraldia" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Eguraldia ikusi" vertex="1">
+          <mxGeometry height="60" width="180" x="760" y="960" as="geometry" />
+        </mxCell>
+        <mxCell id="ucTxata" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="Txata erabili" vertex="1">
+          <mxGeometry height="60" width="180" x="760" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="ucMezuaBidali" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Mezua bidali" vertex="1">
+          <mxGeometry height="60" width="160" x="1240" y="1080" as="geometry" />
+        </mxCell>
+        <mxCell id="ucFitxategia" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Fitxategia bidali, ikusi edo gorde" vertex="1">
+          <mxGeometry height="60" width="210" x="1230" y="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="a3" edge="1" parent="1" source="actorGerentea" style="endArrow=none;html=1;rounded=0;" target="ucMenu" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m1" edge="1" parent="1" source="ucMenu" style="endArrow=none;html=1;rounded=0;" target="ucLangileak" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m2" edge="1" parent="1" source="ucMenu" style="endArrow=none;html=1;rounded=0;" target="ucProduktuak" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m3" edge="1" parent="1" source="ucMenu" style="endArrow=none;html=1;rounded=0;" target="ucOsagaiak" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m4" edge="1" parent="1" source="ucMenu" style="endArrow=none;html=1;rounded=0;" target="ucHornitzaileak" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m6" edge="1" parent="1" source="ucMenu" style="endArrow=none;html=1;rounded=0;" target="ucMahaiak" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m7" edge="1" parent="1" source="ucMenu" style="endArrow=none;html=1;rounded=0;" target="ucEguraldia" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="m8" edge="1" parent="1" source="ucMenu" style="endArrow=none;html=1;rounded=0;" target="ucTxata" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i2" edge="1" parent="1" source="ucLangileaSortu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=0.989;entryY=0.623;entryDx=0;entryDy=0;entryPerimeter=0;" target="ucLangileak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1125" y="-360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x1" edge="1" parent="1" source="ucLangileaEditatu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;" target="ucLangileak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x2" edge="1" parent="1" source="ucLangileaEzabatu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;" target="ucLangileak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x3" edge="1" parent="1" source="ucProduktuaEditatu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;" target="ucProduktuak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x4" edge="1" parent="1" source="ucProduktuaEzabatu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;" target="ucProduktuak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x5" edge="1" parent="1" source="Qj8Y_vRrHFGkL5Tl0Rjr-21" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="ucOsagaiak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="390" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="x6" edge="1" parent="1" source="ucStocka" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;" target="ucOsagaiak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x7" edge="1" parent="1" source="ucStockGutxi" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;" target="ucOsagaiak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x8" edge="1" parent="1" source="ucHornitzaileaEditatu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;" target="ucHornitzaileak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x9" edge="1" parent="1" source="ucHornitzaileaEzabatu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;" target="ucHornitzaileak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="x13" edge="1" parent="1" source="ucFitxategia" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;" target="ucTxata" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-5" edge="1" parent="1" source="ucMenu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="ucLogin" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" x="0.1596" y="10" as="geometry">
+            <mxPoint as="offset" />
+            <mxPoint x="500" y="255" as="sourcePoint" />
+            <mxPoint x="395" y="132" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-12" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Erabiltzaile pasahitza aldatu eta zifratuta gorde" vertex="1">
+          <mxGeometry height="60" width="160" x="1215" y="-540" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-13" edge="1" parent="1" source="Qj8Y_vRrHFGkL5Tl0Rjr-12" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;entryX=1;entryY=0;entryDx=0;entryDy=0;" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="893.6396103067893" y="-381.21320343559614" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-14" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Produktuaren osagaia(k) aukeratu" vertex="1">
+          <mxGeometry height="60" width="220" x="1550" y="-20" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-15" edge="1" parent="1" source="ucProduktuaSortu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="Qj8Y_vRrHFGkL5Tl0Rjr-14" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1190" y="-70" as="sourcePoint" />
+            <mxPoint x="1470" y="-70" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-17" edge="1" parent="1" source="ucProduktuaSortu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="ucProduktuak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1409" y="-100" as="sourcePoint" />
+            <mxPoint x="1110" y="-47" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-18" edge="1" parent="1" source="Qj8Y_vRrHFGkL5Tl0Rjr-19" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="ucProduktuaEditatu" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1550" y="-140" as="sourcePoint" />
+            <mxPoint x="1395" y="-140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-19" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Produktuaren osagaia(k) aldatu" vertex="1">
+          <mxGeometry height="60" width="220" x="1550" y="-100" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Osagaia editatu" vertex="1">
+          <mxGeometry height="60" width="150" x="1215" y="370" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-23" edge="1" parent="1" source="Qj8Y_vRrHFGkL5Tl0Rjr-24" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="ucOsagaiak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1230" y="300" as="sourcePoint" />
+            <mxPoint x="1120" y="338" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-24" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Osagaia sortu" vertex="1">
+          <mxGeometry height="60" width="150" x="1230" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-27" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" value="Hornitzailea sortu" vertex="1">
+          <mxGeometry height="60" width="180" x="1215" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-28" edge="1" parent="1" source="Qj8Y_vRrHFGkL5Tl0Rjr-27" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;entryX=0.921;entryY=0.167;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.013;exitY=0.412;exitDx=0;exitDy=0;exitPerimeter=0;" target="ucHornitzaileak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1351" y="540" as="sourcePoint" />
+            <mxPoint x="1000" y="361" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-29" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" value="Hornitzen dituen osagaiak ikusi" vertex="1">
+          <mxGeometry height="70" width="160" x="1550" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-30" edge="1" parent="1" source="Qj8Y_vRrHFGkL5Tl0Rjr-29" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" target="Qj8Y_vRrHFGkL5Tl0Rjr-27" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1850" y="403" as="sourcePoint" />
+            <mxPoint x="1548" y="330" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-31" edge="1" parent="1" source="ucHornitzaileaSortu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="ucHornitzaileak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1437" y="510" as="sourcePoint" />
+            <mxPoint x="1140" y="545" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-32" edge="1" parent="1" source="ucMahaiaEzabatu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;entryX=1;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="ucMahaiak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1421" y="1052" as="sourcePoint" />
+            <mxPoint x="1060" y="890" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-33" edge="1" parent="1" source="ucMahaiaEditatu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="ucMahaiak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1441" y="890" as="sourcePoint" />
+            <mxPoint x="1110" y="909" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-34" edge="1" parent="1" source="ucMahaiaSortu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;entryX=1;entryY=1;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="ucMahaiak" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1271" y="920" as="sourcePoint" />
+            <mxPoint x="940" y="939" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-35" edge="1" parent="1" source="ucMezuaBidali" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" target="ucTxata" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1408" y="1199" as="sourcePoint" />
+            <mxPoint x="1090" y="1140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Qj8Y_vRrHFGkL5Tl0Rjr-36" edge="1" parent="1" source="ucMenu" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;fontSize=11;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="ucLogout" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="668" y="309" as="sourcePoint" />
+            <mxPoint x="350" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

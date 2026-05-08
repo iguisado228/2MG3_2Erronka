@@ -1,0 +1,232 @@
+<mxfile host="Electron" agent="Codex">
+  <diagram id="api-class-diagram" name="API class diagram">
+    <mxGraphModel dx="6630" dy="3900" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2400" pageHeight="1700" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="dep1" edge="1" parent="1" source="ErreserbakController" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="ErreserbaRepository" value="erabiltzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep2" edge="1" parent="1" source="EskariakController" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="EskariaRepository" value="erabiltzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep3" edge="1" parent="1" source="ProduktuakController" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="ProduktuaRepository" value="erabiltzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep4" edge="1" parent="1" source="ProduktuakController" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="ProduktuaOsagaiaRepository" value="erabiltzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dep6" edge="1" parent="1" source="BasicControllers" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="OtherRepositories" value="erabiltzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="repoEntity1" edge="1" parent="1" source="ErreserbaRepository" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="Erreserba" value="gordetzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="repoEntity2" edge="1" parent="1" source="EskariaRepository" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="Eskaria" value="gordetzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="repoEntity3" edge="1" parent="1" source="ProduktuaRepository" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="Produktua" value="gordetzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="repoEntity4" edge="1" parent="1" source="ProduktuaOsagaiaRepository" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="ProduktuaOsagaia" value="gordetzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel1" edge="1" parent="1" source="Erreserba" style="endArrow=open;endFill=0;html=1;rounded=0;startArrow=none;" target="Langilea" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel2" edge="1" parent="1" source="NHibernateHelper" style="endArrow=open;endFill=0;html=1;rounded=0;startArrow=none;" target="Mahaia" value="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel3" edge="1" parent="1" source="Erreserba" style="endArrow=open;endFill=0;html=1;rounded=0;startArrow=none;" target="Eskaria" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel4" edge="1" parent="1" source="Eskaria" style="endArrow=diamondThin;endFill=1;html=1;rounded=0;startArrow=none;" target="EskariaProduktua" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel5" edge="1" parent="1" source="EskariaProduktua" style="endArrow=open;endFill=0;html=1;rounded=0;startArrow=none;" target="Produktua" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel6" edge="1" parent="1" source="Produktua" style="endArrow=diamondThin;endFill=1;html=1;rounded=0;startArrow=none;" target="ProduktuaOsagaia" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel7" edge="1" parent="1" source="ProduktuaOsagaia" style="endArrow=open;endFill=0;html=1;rounded=0;startArrow=none;" target="Osagaia" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="rel8" edge="1" parent="1" source="Lanpostua" style="endArrow=diamondThin;endFill=0;html=1;rounded=0;startArrow=none;" target="Langilea" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dto1" edge="1" parent="1" source="ErreserbakController" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="ErreserbaDto" value="erabiltzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dto2" edge="1" parent="1" source="EskariakController" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="EskariaDto" value="erabiltzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dto3" edge="1" parent="1" source="ProduktuakController" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="ProduktuaDto" value="erabiltzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dto5" edge="1" parent="1" source="BasicControllers" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="LangileaDto" value="erabiltzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dto6" edge="1" parent="1" source="BasicControllers" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="OtherDtos" value="erabiltzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="dto7" edge="1" parent="1" source="BasicControllers" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="EguraldiaDtos" value="erabiltzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="ErreserbakController" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;align=left;spacingLeft=8;" value="&lt;&lt;Kontrolatzailea&gt;&gt;&lt;br&gt;&lt;b&gt;ErreserbakController&lt;/b&gt;&lt;hr&gt;- _repo: ErreserbaRepository&lt;br&gt;- _eskariaRepo: EskariaRepository&lt;br&gt;- _produktuaRepo: ProduktuaRepository&lt;hr&gt;+ GetAll()&lt;br&gt;+ Sortu(dto)&lt;br&gt;+ Update(id,dto)&lt;br&gt;+ Ordaindu(dto)&lt;br&gt;+ Delete(id)" vertex="1">
+          <mxGeometry height="190" width="230" x="-100" y="-1010" as="geometry" />
+        </mxCell>
+        <mxCell id="EskariakController" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;align=left;spacingLeft=8;" value="&lt;&lt;Kontrolatzailea&gt;&gt;&lt;br&gt;&lt;b&gt;EskariakController&lt;/b&gt;&lt;hr&gt;- _repo: EskariaRepository&lt;br&gt;- _erreserbaRepo: ErreserbaRepository&lt;br&gt;- _produktuaRepo: ProduktuaRepository&lt;hr&gt;+ GetAll()&lt;br&gt;+ Get(id)&lt;br&gt;+ Sortu(dto)&lt;br&gt;+ Update(id,dto)&lt;br&gt;+ Delete(id)" vertex="1">
+          <mxGeometry height="190" width="230" x="-130" y="-1365" as="geometry" />
+        </mxCell>
+        <mxCell id="ProduktuakController" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;align=left;spacingLeft=8;" value="&lt;&lt;Kontrolatzailea&gt;&gt;&lt;br&gt;&lt;b&gt;ProduktuakController&lt;/b&gt;&lt;hr&gt;- _repo: ProduktuaRepository&lt;br&gt;- _produktuaOsagaiaRepo&lt;br&gt;- _osagaiaRepo&lt;hr&gt;+ GetAll()&lt;br&gt;+ Get(id)&lt;br&gt;+ Create(dto)&lt;br&gt;+ Update(id,dto)&lt;br&gt;+ Delete(id)&lt;br&gt;+ AddOsagaia(...)" vertex="1">
+          <mxGeometry height="205" width="230" x="1410" y="-520" as="geometry" />
+        </mxCell>
+        <mxCell id="BasicControllers" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;align=left;spacingLeft=8;" value="&lt;&lt;Kontrolatzaileak&gt;&gt;&lt;br&gt;&lt;b&gt;Beste kontrolatzaileak&lt;/b&gt;&lt;hr&gt;LoginController&lt;br&gt;LangileakController&lt;br&gt;LanpostuakController&lt;br&gt;MahaiakController&lt;br&gt;KategoriakController&lt;br&gt;HornitzaileakController&lt;br&gt;OdooLangileakController&lt;br&gt;OdooLanpostuakController&lt;br&gt;EguraldiaController" vertex="1">
+          <mxGeometry height="175" width="485" x="-285" y="-310" as="geometry" />
+        </mxCell>
+        <mxCell id="ErreserbaRepository" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;align=left;spacingLeft=8;" value="&lt;&lt;Biltegia&gt;&gt;&lt;br&gt;&lt;b&gt;ErreserbaRepository&lt;/b&gt;&lt;hr&gt;- _session: ISession&lt;hr&gt;+ GetAll(): IList&lt;br&gt;+ Get(id): Erreserba?&lt;br&gt;+ Add(erreserba)&lt;br&gt;+ Update(erreserba)&lt;br&gt;+ Delete(erreserba)&lt;br&gt;+ LortuProduktuakErreserbarako(id)" vertex="1">
+          <mxGeometry height="180" width="235" x="280" y="-1000" as="geometry" />
+        </mxCell>
+        <mxCell id="ProduktuaOsagaiaRepository" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;align=left;spacingLeft=8;" value="&lt;&lt;Biltegia&gt;&gt;&lt;br&gt;&lt;b&gt;ProduktuaOsagaiaRepository&lt;/b&gt;&lt;hr&gt;- _session: ISession&lt;hr&gt;+ GetByProduktuaId(id)&lt;br&gt;+ GetOne(produktuaId, osagaiaId)&lt;br&gt;+ SaveOrUpdate(entitatea)&lt;br&gt;+ Delete(entitatea)" vertex="1">
+          <mxGeometry height="170" width="230" x="1965" y="-502.5" as="geometry" />
+        </mxCell>
+        <mxCell id="ProduktuaRepository" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;align=left;spacingLeft=8;" value="&lt;&lt;Biltegia&gt;&gt;&lt;br&gt;&lt;b&gt;ProduktuaRepository&lt;/b&gt;&lt;hr&gt;- _session: ISession&lt;hr&gt;+ GetAll()&lt;br&gt;+ Get(id)&lt;br&gt;+ Add(produktua)&lt;br&gt;+ Update(produktua)&lt;br&gt;+ Delete(produktua)" vertex="1">
+          <mxGeometry height="170" width="235" x="1410" y="-1060" as="geometry" />
+        </mxCell>
+        <mxCell id="OtherRepositories" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;align=left;spacingLeft=8;" value="&amp;lt;&amp;gt;&lt;br&gt;&lt;b&gt;Beste Repository-ak&lt;/b&gt;&lt;hr&gt;LangileaRepository&lt;br&gt;LanpostuaRepository&lt;br&gt;MahaiaRepository&lt;br&gt;MotaRepository&lt;br&gt;HornitzaileaRepository" vertex="1">
+          <mxGeometry height="160" width="230" x="-157.5" y="-540" as="geometry" />
+        </mxCell>
+        <mxCell id="Erreserba" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;align=left;spacingLeft=8;" value="&lt;&lt;Entitatea&gt;&gt;&lt;br&gt;&lt;b&gt;Erreserba&lt;/b&gt;&lt;hr&gt;+ Id: int&lt;br&gt;+ BezeroIzena: string&lt;br&gt;+ Telefonoa: string&lt;br&gt;+ PertsonaKopurua: int&lt;br&gt;+ EgunaOrdua: DateTime&lt;br&gt;+ PrezioTotala: double&lt;br&gt;+ Ordainduta: int&lt;br&gt;+ FakturaRuta: string&lt;br&gt;+ Langilea: Langilea&lt;br&gt;+ Mahaia: Mahaia" vertex="1">
+          <mxGeometry height="220" width="260" x="732.5" y="-1020" as="geometry" />
+        </mxCell>
+        <mxCell id="Eskaria" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;align=left;spacingLeft=8;" value="&lt;&lt;Entitatea&gt;&gt;&lt;br&gt;&lt;b&gt;Eskaria&lt;/b&gt;&lt;hr&gt;+ Id: int&lt;br&gt;+ Prezioa: double&lt;br&gt;+ Egoera: string&lt;br&gt;+ Erreserba: Erreserba&lt;br&gt;+ Langilea: Langilea&lt;br&gt;+ Mahaia: Mahaia&lt;br&gt;+ Produktuak: IList&lt;EskariaProduktua&gt;" vertex="1">
+          <mxGeometry height="215" width="260" x="732.5" y="-1370" as="geometry" />
+        </mxCell>
+        <mxCell id="EskariaProduktua" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;align=left;spacingLeft=8;" value="&lt;&lt;Entitatea&gt;&gt;&lt;br&gt;&lt;b&gt;EskariaProduktua&lt;/b&gt;&lt;hr&gt;+ Eskaria: Eskaria&lt;br&gt;+ Produktua: Produktua&lt;br&gt;+ Kantitatea: int&lt;br&gt;+ Prezioa: double&lt;hr&gt;+ Equals(obj)&lt;br&gt;+ GetHashCode()" vertex="1">
+          <mxGeometry height="165" width="260" x="1950" y="-1340" as="geometry" />
+        </mxCell>
+        <mxCell id="ProduktuaOsagaia" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;align=left;spacingLeft=8;" value="&lt;&lt;Entitatea&gt;&gt;&lt;br&gt;&lt;b&gt;ProduktuaOsagaia&lt;/b&gt;&lt;hr&gt;+ Produktua: Produktua&lt;br&gt;+ Osagaia: Osagaia&lt;br&gt;+ Kantitatea: int&lt;hr&gt;+ Equals(obj)&lt;br&gt;+ GetHashCode()" vertex="1">
+          <mxGeometry height="155" width="260" x="1950" y="-790" as="geometry" />
+        </mxCell>
+        <mxCell id="Produktua" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;align=left;spacingLeft=8;" value="&lt;&lt;Entitatea&gt;&gt;&lt;br&gt;&lt;b&gt;Produktua&lt;/b&gt;&lt;hr&gt;+ Id: int&lt;br&gt;+ Izena: string&lt;br&gt;+ Prezioa: double&lt;br&gt;+ Stock: int&lt;br&gt;+ MotaId: int&lt;br&gt;+ Osagaiak: IList&lt;ProduktuaOsagaia&gt;" vertex="1">
+          <mxGeometry height="175" width="260" x="1950" y="-1060" as="geometry" />
+        </mxCell>
+        <mxCell id="Osagaia" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;align=left;spacingLeft=8;" value="&lt;&lt;Entitatea&gt;&gt;&lt;br&gt;&lt;b&gt;Osagaia&lt;/b&gt;&lt;hr&gt;+ Id: int&lt;br&gt;+ Izena: string&lt;br&gt;+ Prezioa: double&lt;br&gt;+ Stock: int&lt;br&gt;+ HornitzaileakId: int" vertex="1">
+          <mxGeometry height="145" width="260" x="2380" y="-785" as="geometry" />
+        </mxCell>
+        <mxCell id="Langilea" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;align=left;spacingLeft=8;" value="&lt;&lt;Entitatea&gt;&gt;&lt;br&gt;&lt;b&gt;Langilea&lt;/b&gt;&lt;hr&gt;+ Id: int&lt;br&gt;+ Izena: string&lt;br&gt;+ Abizena: string&lt;br&gt;+ NAN: string&lt;br&gt;+ Erabiltzaile_izena: string&lt;br&gt;+ Langile_kodea: int&lt;br&gt;+ Pasahitza: string&lt;br&gt;+ Txat_sarbidea: bool&lt;br&gt;+ Lanpostua: Lanpostua" vertex="1">
+          <mxGeometry height="220" width="260" x="732.5" y="-550" as="geometry" />
+        </mxCell>
+        <mxCell id="Mahaia" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;align=left;spacingLeft=8;" value="&lt;&lt;Entitatea&gt;&gt;&lt;br&gt;&lt;b&gt;Mahaia&lt;/b&gt;&lt;hr&gt;+ Id: int&lt;br&gt;+ Zenbakia: int&lt;br&gt;+ PertsonaKopurua: int&lt;br&gt;+ Kokapena: string" vertex="1">
+          <mxGeometry height="125" width="260" x="1070" y="-755" as="geometry" />
+        </mxCell>
+        <mxCell id="Lanpostua" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#d6b656;align=left;spacingLeft=8;" value="&lt;&lt;Entitatea&gt;&gt;&lt;br&gt;&lt;b&gt;Lanpostua&lt;/b&gt;&lt;hr&gt;+ Id: int&lt;br&gt;+ Lanpostu_izena: string&lt;br&gt;+ Langileak: IList&lt;Langilea&gt;" vertex="1">
+          <mxGeometry height="110" width="260" x="732.5" y="-190" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-1" edge="1" parent="1" source="Erreserba" style="endArrow=open;endFill=0;html=1;rounded=0;startArrow=none;" target="NHibernateHelper" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1676" y="-360" as="sourcePoint" />
+            <mxPoint x="1324" y="1260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NHibernateHelper" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#9673a6;align=left;spacingLeft=8;" value="&lt;&lt;Azpiegitura&gt;&gt;&lt;br&gt;&lt;b&gt;NHibernateHelper&lt;/b&gt;&lt;hr&gt;+ SessionFactory&lt;br&gt;+ BuildSessionFactory()" vertex="1">
+          <mxGeometry height="105" width="190" x="1110" y="-962.5" as="geometry" />
+        </mxCell>
+        <mxCell id="OtherDtos" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;align=left;spacingLeft=8;" value="&lt;&lt;DTOs&gt;&gt;&lt;br&gt;&lt;b&gt;Beste DTOak&lt;/b&gt;&lt;hr&gt;ErreserbaSortuDto&lt;br&gt;ErreserbaOrdainduDto&lt;br&gt;EskariaSortuDto&lt;br&gt;EskariaProduktuaDto&lt;br&gt;EskariaProduktuaSortuDto&lt;br&gt;ProduktuaOsagaiaDto&lt;br&gt;ProduktuaOsagaiaEguneratuDto&lt;br&gt;LanpostuaDto, MahaiaDto&lt;br&gt;LoginRequest, LoginErantzuna&lt;br&gt;OdooLangileaUpsertDto" vertex="1">
+          <mxGeometry height="250" width="360" x="340" y="-340" as="geometry" />
+        </mxCell>
+        <mxCell id="EguraldiaDtos" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;align=left;spacingLeft=8;" value="&lt;&lt;DTOs&gt;&gt;&lt;br&gt;&lt;b&gt;Eguraldia DTOak&lt;/b&gt;&lt;hr&gt;EguraldiaDto&lt;br&gt;EguraldiEgunaDto&lt;br&gt;EguraldiTarteaDto" vertex="1">
+          <mxGeometry height="130" width="230" x="-640" y="-285" as="geometry" />
+        </mxCell>
+        <mxCell id="LangileaDto" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;align=left;spacingLeft=8;" value="&lt;&lt;DTO&gt;&gt;&lt;br&gt;&lt;b&gt;LangileaDto&lt;/b&gt;&lt;hr&gt;Id, Izena, Abizena, NAN&lt;br&gt;Erabiltzaile_izena&lt;br&gt;Langile_kodea, Pasahitza&lt;br&gt;Helbidea, Txat_sarbidea&lt;br&gt;Lanpostua: LanpostuaDto" vertex="1">
+          <mxGeometry height="150" width="230" x="-157.5" y="-40" as="geometry" />
+        </mxCell>
+        <mxCell id="ErreserbaDto" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;align=left;spacingLeft=8;" value="&lt;&lt;DTO&gt;&gt;&lt;br&gt;&lt;b&gt;ErreserbaDto&lt;/b&gt;&lt;hr&gt;Id, BezeroIzena, Telefonoa&lt;br&gt;PertsonaKopurua, EgunaOrdua&lt;br&gt;PrezioTotala, Ordainduta&lt;br&gt;FakturaRuta, LangileaId&lt;br&gt;LangileaIzena, MahaiakId" vertex="1">
+          <mxGeometry height="140" width="230" x="-100" y="-720" as="geometry" />
+        </mxCell>
+        <mxCell id="EskariaDto" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;align=left;spacingLeft=8;" value="&lt;&lt;DTO&gt;&gt;&lt;br&gt;&lt;b&gt;EskariaDto&lt;/b&gt;&lt;hr&gt;Id, Prezioa, Egoera&lt;br&gt;ErreserbaId, MahaiaZenbakia&lt;br&gt;Produktuak: List&lt;EskariaProduktuaDto&gt;" vertex="1">
+          <mxGeometry height="140" width="230" x="-567.5" y="-1340" as="geometry" />
+        </mxCell>
+        <mxCell id="ProduktuaDto" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;align=left;spacingLeft=8;" value="&lt;&lt;DTO&gt;&gt;&lt;br&gt;&lt;b&gt;ProduktuaDto&lt;/b&gt;&lt;hr&gt;Id, Izena, Prezioa&lt;br&gt;MotaId, Stock" vertex="1">
+          <mxGeometry height="115" width="230" x="1410" y="-180" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-3" edge="1" parent="1" source="ErreserbaRepository" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="EskariaRepository" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-51.5" y="-950" as="sourcePoint" />
+            <mxPoint x="268.5" y="-1820" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="EskariaRepository" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;align=left;spacingLeft=8;" value="&lt;&lt;Biltegia&gt;&gt;&lt;br&gt;&lt;b&gt;EskariaRepository&lt;/b&gt;&lt;hr&gt;- _session: ISession&lt;hr&gt;+ GetAll()&lt;br&gt;+ Get(id)&lt;br&gt;+ Add(eskaria)&lt;br&gt;+ Update(eskaria)&lt;br&gt;+ Delete(eskaria)" vertex="1">
+          <mxGeometry height="180" width="230" x="282.5" y="-1352.5" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-7" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1...*" vertex="1">
+          <mxGeometry height="30" width="60" x="862.5" y="-1150" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="862.5" y="-1060" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="852.5" y="-330" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="852.5" y="-220" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-12" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="852.5" y="-585" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1...*" vertex="1">
+          <mxGeometry height="30" width="60" x="852.5" y="-800" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="2195" y="-742.5" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="2330" y="-742.5" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-17" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="2070" y="-887.5" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-18" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1...*" vertex="1">
+          <mxGeometry height="30" width="60" x="2070" y="-820" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="2060" y="-1180" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-20" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1...*" vertex="1">
+          <mxGeometry height="30" width="60" x="2070" y="-1090" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="980" y="-1290" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1" vertex="1">
+          <mxGeometry height="30" width="60" x="2000" y="-1180" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1...*" vertex="1">
+          <mxGeometry height="30" width="60" x="1890" y="-1290" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-25" edge="1" parent="1" source="afAYjIjJ4sKlFGRchFhL-27" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="afAYjIjJ4sKlFGRchFhL-28" value="erabiltzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-26" edge="1" parent="1" source="afAYjIjJ4sKlFGRchFhL-27" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;" target="afAYjIjJ4sKlFGRchFhL-29" value="erabiltzen du">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#6c8ebf;align=left;spacingLeft=8;" value="&lt;&lt;Kontrolatzailea&gt;&gt;&lt;br&gt;&lt;b&gt;OsagaiakController&lt;/b&gt;&lt;hr&gt;- _repo: OsagaiaRepository&lt;hr&gt;+ GetAll()&lt;br&gt;+ Get(id)&lt;br&gt;+ Create(dto)&lt;br&gt;+ Update(id,dto)&lt;br&gt;+ Delete(id)&lt;br&gt;+ UpdateStock(id,dto)" vertex="1">
+          <mxGeometry height="205" width="230" x="2392.5" y="-250" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#82b366;align=left;spacingLeft=8;" value="&lt;&lt;Biltegia&gt;&gt;&lt;br&gt;&lt;b&gt;OsagaiaRepository&lt;/b&gt;&lt;hr&gt;- _session: ISession&lt;hr&gt;+ GetAll()&lt;br&gt;+ Get(id)&lt;br&gt;+ Add(osagaia)&lt;br&gt;+ Update(osagaia)&lt;br&gt;+ Delete(osagaia)" vertex="1">
+          <mxGeometry height="160" width="235" x="2392.5" y="-490" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#b85450;align=left;spacingLeft=8;" value="&lt;&lt;DTO&gt;&gt;&lt;br&gt;&lt;b&gt;OsagaiaDto&lt;/b&gt;&lt;hr&gt;Id, Izena, Prezioa&lt;br&gt;Stock, HornitzaileakId" vertex="1">
+          <mxGeometry height="115" width="230" x="2000" y="-205" as="geometry" />
+        </mxCell>
+        <mxCell id="afAYjIjJ4sKlFGRchFhL-30" edge="1" parent="1" source="afAYjIjJ4sKlFGRchFhL-28" style="endArrow=open;endFill=0;dashed=1;html=1;rounded=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" target="Osagaia" value="gordetzen du">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="2310" y="-770" as="sourcePoint" />
+            <mxPoint x="2615" y="-769" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
